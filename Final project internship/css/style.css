@@ -1,0 +1,306 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+
+
+.btn,
+.explore-btn,
+.btn-exp {
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 22px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn,.btn-exp {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: #e8a33d;;
+}
+
+.explore-btn {
+    background-color: #e8a33d;
+    color: #ffffff;
+}
+
+.explore-btn:hover {
+    background-color: #c98a2b;
+}
+
+
+nav {
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 550;
+}
+
+.logo span {
+    color: #e8a33d;
+}
+
+.links {
+    display: flex;
+    gap: 32px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #323B44;
+    font-size: 17px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #e8a33d;
+}
+
+
+.hero {
+    padding: 20px 6% 50px;
+    background: linear-gradient(120deg, #323B44 0%, #797F86 55%, #BCBFC4 100%);
+    color: #ffffff;
+}
+
+.discover {
+    color: #e8a33d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.explore-btn {
+      margin-left: 30px;
+    margin-top: 20px;
+}
+
+.hero h1 {
+    font-size: 54px;
+    line-height: 1.1;
+    margin: 14px 0 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #e8a33d;
+}
+
+.hero p {
+    max-width: 440px;
+    color: #e5e7eb;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+
+.dest {
+    padding: 80px 6% 90px;
+    text-align: center;
+}
+
+.adv {
+    color: #e8a33d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.dest h2 {
+    font-size: 36px;
+    margin: 10px 0 6px;
+    font-weight: 649;
+}
+
+.sub {
+    color: #6b7280;
+    margin-bottom: 44px;
+}
+
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1300px;
+    min-height: 450px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(17, 24, 39, 0.12);
+    text-align: left;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 44px 48px;
+}
+
+.count {
+    color: #e8a33d;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.country {
+    margin-top: 22px;
+    color: #6b7280;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.info h3 {
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 4px 0 14px;
+}
+
+.desc {
+    max-width: 380px;
+    margin-bottom: 26px;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 24px;
+    margin-bottom: 28px;
+}
+
+.facts b {
+    display: block;
+    font-size: 14px;
+}
+
+.facts span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+
+.pic {
+    position: relative;
+    min-height: 320px;
+}
+
+.pic img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.35s;
+}
+
+.badge {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    padding: 22px 22px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(17, 24, 39, 0.15);
+}
+
+.badge small {
+    display: block;
+    color: #6b7280;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.badge strong {
+    color: #e8a33d;
+    font-size: 28px;
+}
+
+
+.ctrl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 9px;
+    height: 9px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    cursor: pointer;
+}
+
+.dot.on {
+    background-color: #e8a33d;
+}
+
+
+footer {
+    padding: 64px 0 0;
+    background-color: #17202A;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 28px;
+}
+
+footer p {
+    margin-top: 8px;
+    color: #9ca3af;
+}
+
+footer small {
+    display: block;
+    margin-top: 52px;
+    padding: 22px 6%;
+    background-color: #101820;
+    color: #9ca3af;
+}
+
+
